@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "limitys"
-version = "2022.9.18"
+version = "2022.9.24"
 description = "Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
@@ -17,7 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
 ]
-keywords = ["developer-tools", "threat-model", "validation", "verification"]
+keywords = ["developer-tools", "surviving-process-bloat", "requirements-engineering", "validation", "verification"]
 dependencies = [
     "PyYAML >= 6.0",
     "typer >= 0.6.1",
