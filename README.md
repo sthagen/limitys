@@ -1,6 +1,6 @@
 # limitys
 
-Threat model (Finnish: uhkamalli) your application.
+Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies.
 
 [License: MIT](https://git.sr.ht/~sthagen/limitys/tree/default/item/LICENSE)
 
