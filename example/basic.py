@@ -13,11 +13,7 @@ MODELS = {
     'news': 'word2vec-google-news-300',
     'wiki': 'fasttext-wiki-news-subwords-300',
 }
-model = model_api.load(MODELS['wiki'])
-
-doc_obama = 'Obama speaks to the media in Illinois'
-doc_president = 'The president greets the press in Chicago'
-doc_orange = 'Oranges are my favorite fruit'
+model = model_api.load(MODELS['news'])
 
 docs = {
     'wonderful': (
