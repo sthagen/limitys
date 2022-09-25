@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([77d23071 ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:77d23071dc3f82308f9bdb2f76486ee57f71c920ae6eeb7217d042758d01bf50")).
-<!--[[[end]]] (checksum: 5a09485469f8ff18ffaa415b7b0c96ed)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with SHA256 checksum ([23b266fb ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256 "sha256:23b266fbffdd562ae7016f1eca6e0b475f8c338dac83a70b468faff300dd11ee")).
+<!--[[[end]]] (checksum: 0b5b1c27f238b6e9ff895cbfbb0c8ac3)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -10,11 +10,16 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Direct Dependencies
 
 <!--[[[fill direct_dependencies_table()]]]-->
-| Name                                       | Version                                        | License     | Author            | Description (from packaging data)                                  |
-|:-------------------------------------------|:-----------------------------------------------|:------------|:------------------|:-------------------------------------------------------------------|
-| [PyYAML](https://pyyaml.org/)              | [6.0](https://pypi.org/project/PyYAML/6.0/)    | MIT License | Kirill Simonov    | YAML parser and emitter for Python                                 |
-| [typer](https://github.com/tiangolo/typer) | [0.6.1](https://pypi.org/project/typer/0.6.1/) | MIT License | Sebastián Ramírez | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-<!--[[[end]]] (checksum: 2cbd9167abfa69505798af7ad0916e5c)-->
+| Name                                       | Version                                               | License                 | Author                      | Description (from packaging data)                                       |
+|:-------------------------------------------|:------------------------------------------------------|:------------------------|:----------------------------|:------------------------------------------------------------------------|
+| [PyYAML](https://pyyaml.org/)              | [6.0](https://pypi.org/project/PyYAML/6.0/)           | MIT License             | Kirill Simonov              | YAML parser and emitter for Python                                      |
+| [gensim](http://radimrehurek.com/gensim)   | [4.2.0](https://pypi.org/project/gensim/4.2.0/)       | LGPL-2.1-only           | Radim Rehurek               | Python framework for fast Vector Space Modelling                        |
+| [nltk](https://www.nltk.org/)              | [3.7](https://pypi.org/project/nltk/3.7/)             | Apache Software License | NLTK Team                   | Natural Language Toolkit                                                |
+| [numpy](https://www.numpy.org)             | [1.23.3](https://pypi.org/project/numpy/1.23.3/)      | BSD License             | Travis E. Oliphant et al.   | NumPy is the fundamental package for array computing with Python.       |
+| [pandas](https://pandas.pydata.org)        | [1.5.0](https://pypi.org/project/pandas/1.5.0/)       | BSD License             | The Pandas Development Team | Powerful data structures for data analysis, time series, and statistics |
+| [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | UNKNOWN                     | A set of python modules for machine learning and data mining            |
+| [typer](https://github.com/tiangolo/typer) | [0.6.1](https://pypi.org/project/typer/0.6.1/)        | MIT License             | Sebastián Ramírez           | Typer, build great CLIs. Easy to code. Based on Python type hints.      |
+<!--[[[end]]] (checksum: 619e77e21e280f71f494b92d95bec61f)-->
 
 ### Indirect Dependencies
 
@@ -38,8 +43,29 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
+gensim==4.2.0
+  - numpy [required: >=1.17.0, installed: 1.23.3]
+  - scipy [required: >=0.18.1, installed: 1.9.1]
+    - numpy [required: >=1.18.5,<1.26.0, installed: 1.23.3]
+  - smart-open [required: >=1.8.1, installed: 6.2.0]
+nltk==3.7
+  - click [required: Any, installed: 8.1.3]
+  - joblib [required: Any, installed: 1.2.0]
+  - regex [required: >=2021.8.3, installed: 2022.9.13]
+  - tqdm [required: Any, installed: 4.64.1]
+pandas==1.5.0
+  - numpy [required: >=1.21.0, installed: 1.23.3]
+  - python-dateutil [required: >=2.8.1, installed: 2.8.2]
+    - six [required: >=1.5, installed: 1.16.0]
+  - pytz [required: >=2020.1, installed: 2022.2.1]
 PyYAML==6.0
+scikit-learn==1.1.2
+  - joblib [required: >=1.0.0, installed: 1.2.0]
+  - numpy [required: >=1.17.3, installed: 1.23.3]
+  - scipy [required: >=1.3.2, installed: 1.9.1]
+    - numpy [required: >=1.18.5,<1.26.0, installed: 1.23.3]
+  - threadpoolctl [required: >=2.0.0, installed: 3.1.0]
 typer==0.6.1
   - click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
 ````
-<!--[[[end]]] (checksum: 02796995333dbf7df09e445adae7be69)-->
+<!--[[[end]]] (checksum: db89c2606ea727a50b00ba7e62968ed3)-->
