@@ -20,6 +20,8 @@ classifiers = [
 keywords = ["developer-tools", "surviving-process-bloat", "requirements-engineering", "validation", "verification"]
 dependencies = [
     "PyYAML >= 6.0",
+    "numpy >= 1.23.3",
+    "pandas >= 1.5.0",
     "typer >= 0.6.1",
 ]
 requires-python = ">=3.8"
