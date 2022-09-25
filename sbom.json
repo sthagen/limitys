@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:ba8df88b-e9eb-4fee-a38e-07fada656902",
+  "serialNumber": "urn:uuid:27950c8b-a78a-4486-9abe-e55f418caaf2",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-09-24T20:48:45.900655+00:00",
+    "timestamp": "2022-09-25T13:22:54.751635+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,14 +56,49 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "b8ad40bb-d1ed-4150-8eef-5d584ec51023",
+      "bom-ref": "64b9d4f9-6f16-4298-8386-dbff906f1f79",
       "name": "PyYAML",
       "version": "6.0",
       "purl": "pkg:pypi/pyyaml@6.0"
     },
     {
       "type": "library",
-      "bom-ref": "fbc9478f-3afd-46ad-a14b-ec687d897aa6",
+      "bom-ref": "c6ceb9ba-118e-45df-a4ad-c10dd908b203",
+      "name": "gensim",
+      "version": "4.2.0",
+      "purl": "pkg:pypi/gensim@4.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "417d1cd2-237e-4304-9040-ef48b36a8de0",
+      "name": "nltk",
+      "version": "3.7",
+      "purl": "pkg:pypi/nltk@3.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "dfdc95bd-4ebe-4c07-830b-7e6bdeff2c00",
+      "name": "numpy",
+      "version": "1.23.3",
+      "purl": "pkg:pypi/numpy@1.23.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "c94ef9cd-3f6e-4f32-a01d-9b9edfc06f1d",
+      "name": "pandas",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/pandas@1.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cb1206aa-3ac1-4603-8d60-629fdc23235e",
+      "name": "scikit-learn",
+      "version": "1.1.2",
+      "purl": "pkg:pypi/scikit-learn@1.1.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "90581a39-cfd0-4f5c-b26a-d95a17175aaf",
       "name": "typer",
       "version": "0.6.1",
       "purl": "pkg:pypi/typer@0.6.1"
@@ -71,11 +106,31 @@
   ],
   "dependencies": [
     {
-      "ref": "b8ad40bb-d1ed-4150-8eef-5d584ec51023",
+      "ref": "64b9d4f9-6f16-4298-8386-dbff906f1f79",
       "dependsOn": []
     },
     {
-      "ref": "fbc9478f-3afd-46ad-a14b-ec687d897aa6",
+      "ref": "c6ceb9ba-118e-45df-a4ad-c10dd908b203",
+      "dependsOn": []
+    },
+    {
+      "ref": "417d1cd2-237e-4304-9040-ef48b36a8de0",
+      "dependsOn": []
+    },
+    {
+      "ref": "dfdc95bd-4ebe-4c07-830b-7e6bdeff2c00",
+      "dependsOn": []
+    },
+    {
+      "ref": "c94ef9cd-3f6e-4f32-a01d-9b9edfc06f1d",
+      "dependsOn": []
+    },
+    {
+      "ref": "cb1206aa-3ac1-4603-8d60-629fdc23235e",
+      "dependsOn": []
+    },
+    {
+      "ref": "90581a39-cfd0-4f5c-b26a-d95a17175aaf",
       "dependsOn": []
     }
   ]
