@@ -42,11 +42,30 @@ def parse_request(argv: List[str]) -> Union[int, argparse.Namespace]:
         default=sys.stdout,
         help='output file path for matrix (default: STDOUT)',
     )
+    parser.add_argument(
+        '--quiet',
+        '-q',
+        dest='quiet',
+        default=False,
+        action='store_true',
+        help='work as quiet as possible - progress bar only if all well (default: False)',
+    )
+    parser.add_argument(
+        '--verbose',
+        '-v',
+        dest='verbose',
+        default=False,
+        action='store_true',
+        help='work logging more information along the way (default: False)',
+    )
     if not argv:
         parser.print_help()
         return 0
 
     options = parser.parse_args(argv)
+
+    if options.verbose and options.quiet:
+        parser.error('you cannot be quiet and verbose at the same time')
 
     if not options.documents:
         if options.documents_pos:

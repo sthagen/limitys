@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import List
 
 
 class Language(str, Enum):
@@ -908,6 +909,21 @@ WORDS = {
 }
 
 
-def cleanse(text, language_code: Language = EN):
+def cleanse(text, language_code: Language = EN) -> List[str]:
     """Filter the stopwords of the language key out."""
     return [w for w in text.lower().split() if w not in WORDS[language_code]]
+
+
+def language_code_of(language: str) -> Language:
+    """Leniently map language as str to language code for indexing into words."""
+    lenient = language.strip().lower()
+    if lenient == 'german':
+        return DE
+    if lenient == 'english':
+        return EN
+    if lenient == 'spanish':
+        return ES
+    if lenient == 'french':
+        return FR
+
+    raise ValueError(f'no stop words available for language {language}')
