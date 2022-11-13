@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := all
 black = black -S -l 120 --target-version py310 limitys test
-flake8 = flake8 limitys test
+flake8 = flake8 --ignore=E203 limitys test
 isort = isort limitys test
 pytest = pytest --asyncio-mode=strict --cov=limitys --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 types = mypy limitys
