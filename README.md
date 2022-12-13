@@ -1,8 +1,10 @@
-# limitys
+# Limitys
 
 Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies.
 
 [License: MIT](https://git.sr.ht/~sthagen/limitys/tree/default/item/LICENSE)
+
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
 [![downloads](https://pepy.tech/badge/limitys/month)](https://pepy.tech/project/limitys)
