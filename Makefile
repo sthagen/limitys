@@ -1,9 +1,9 @@
 .DEFAULT_GOAL := all
 black = black -S -l 120 --target-version py310 limitys test
-flake8 = flake8 --ignore=E203 limitys test
-isort = isort limitys test
+lint = ruff limitys test
 pytest = pytest --asyncio-mode=strict --cov=limitys --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 types = mypy limitys
+
 .PHONY: install
 install:
 	pip install -U pip wheel
@@ -21,19 +21,18 @@ init:
 
 .PHONY: format
 format:
-	$(isort)
+	$(lint) --fix
 	$(black)
 
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	$(flake8)
-	$(isort) --check-only --df
+	$(lint)  --diff
 	$(black) --check --diff
 
 .PHONY: types
 types:
-	$(mypy)
+	$(types)
 
 .PHONY: test
 test: clean
