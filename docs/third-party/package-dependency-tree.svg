@@ -36,19 +36,19 @@
 <text text-anchor="middle" x="542.11" y="-344.89" font-family="Times,serif" font-size="14.00">scikit&#45;learn</text>
 <text text-anchor="middle" x="542.11" y="-329.89" font-family="Times,serif" font-size="14.00">1.1.2</text>
 </g>
-<!-- joblib -->
+<!-- numpy -->
 <g id="node4" class="node">
-<title>joblib</title>
-<ellipse fill="none" stroke="black" cx="381.11" cy="-236.35" rx="33.88" ry="26.74"/>
-<text text-anchor="middle" x="381.11" y="-240.15" font-family="Times,serif" font-size="14.00">joblib</text>
-<text text-anchor="middle" x="381.11" y="-225.15" font-family="Times,serif" font-size="14.00">1.2.0</text>
+<title>numpy</title>
+<ellipse fill="none" stroke="black" cx="725.11" cy="-131.61" rx="38.78" ry="26.74"/>
+<text text-anchor="middle" x="725.11" y="-135.41" font-family="Times,serif" font-size="14.00">numpy</text>
+<text text-anchor="middle" x="725.11" y="-120.41" font-family="Times,serif" font-size="14.00">1.24.0</text>
 </g>
-<!-- scikit&#45;learn&#45;&gt;joblib -->
+<!-- scikit&#45;learn&#45;&gt;numpy -->
 <g id="edge2" class="edge">
-<title>scikit&#45;learn&#45;&gt;joblib</title>
-<path fill="none" stroke="black" d="M506.56,-320.37C493.68,-313.02 479.11,-304.45 466.11,-296.22 448.91,-285.32 430.26,-272.52 414.82,-261.65"/>
-<polygon fill="black" stroke="black" points="417.09,-258.96 406.9,-256.03 413.04,-264.67 417.09,-258.96"/>
-<text text-anchor="middle" x="488.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=1.0.0</text>
+<title>scikit&#45;learn&#45;&gt;numpy</title>
+<path fill="none" stroke="black" d="M584.44,-324.2C599.39,-317.19 615.59,-307.86 628.11,-296.22 648.96,-276.84 685.72,-209.37 707.5,-167.37"/>
+<polygon fill="black" stroke="black" points="710.54,-169.12 712.01,-158.62 704.31,-165.91 710.54,-169.12"/>
+<text text-anchor="middle" x="710.11" y="-232.65" font-family="Times,serif" font-size="14.00">&gt;=1.17.3</text>
 </g>
 <!-- threadpoolctl -->
 <g id="node5" class="node">
@@ -62,35 +62,35 @@
 <title>scikit&#45;learn&#45;&gt;threadpoolctl</title>
 <path fill="none" stroke="black" d="M530.49,-314.69C524.73,-302.1 517.68,-286.68 511.39,-272.93"/>
 <polygon fill="black" stroke="black" points="514.73,-271.82 507.39,-264.19 508.37,-274.74 514.73,-271.82"/>
-<text text-anchor="middle" x="543.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=2.0.0</text>
-</g>
-<!-- numpy -->
-<g id="node6" class="node">
-<title>numpy</title>
-<ellipse fill="none" stroke="black" cx="725.11" cy="-131.61" rx="38.78" ry="26.74"/>
-<text text-anchor="middle" x="725.11" y="-135.41" font-family="Times,serif" font-size="14.00">numpy</text>
-<text text-anchor="middle" x="725.11" y="-120.41" font-family="Times,serif" font-size="14.00">1.24.0</text>
-</g>
-<!-- scikit&#45;learn&#45;&gt;numpy -->
-<g id="edge4" class="edge">
-<title>scikit&#45;learn&#45;&gt;numpy</title>
-<path fill="none" stroke="black" d="M584.24,-323.76C598.89,-316.75 614.73,-307.53 627.11,-296.22 648.18,-276.97 685.32,-209.45 707.32,-167.41"/>
-<polygon fill="black" stroke="black" points="710.37,-169.14 711.88,-158.65 704.16,-165.91 710.37,-169.14"/>
-<text text-anchor="middle" x="709.11" y="-232.65" font-family="Times,serif" font-size="14.00">&gt;=1.17.3</text>
+<text text-anchor="middle" x="544.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=2.0.0</text>
 </g>
 <!-- scipy -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>scipy</title>
 <ellipse fill="none" stroke="black" cx="607.11" cy="-236.35" rx="31.64" ry="26.74"/>
 <text text-anchor="middle" x="607.11" y="-240.15" font-family="Times,serif" font-size="14.00">scipy</text>
 <text text-anchor="middle" x="607.11" y="-225.15" font-family="Times,serif" font-size="14.00">1.9.3</text>
 </g>
 <!-- scikit&#45;learn&#45;&gt;scipy -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>scikit&#45;learn&#45;&gt;scipy</title>
 <path fill="none" stroke="black" d="M557.85,-315.22C566.46,-301.61 577.23,-284.59 586.5,-269.93"/>
 <polygon fill="black" stroke="black" points="589.44,-271.84 591.82,-261.51 583.52,-268.09 589.44,-271.84"/>
-<text text-anchor="middle" x="600.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=1.3.2</text>
+<text text-anchor="middle" x="601.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=1.3.2</text>
+</g>
+<!-- joblib -->
+<g id="node7" class="node">
+<title>joblib</title>
+<ellipse fill="none" stroke="black" cx="381.11" cy="-236.35" rx="33.88" ry="26.74"/>
+<text text-anchor="middle" x="381.11" y="-240.15" font-family="Times,serif" font-size="14.00">joblib</text>
+<text text-anchor="middle" x="381.11" y="-225.15" font-family="Times,serif" font-size="14.00">1.2.0</text>
+</g>
+<!-- scikit&#45;learn&#45;&gt;joblib -->
+<g id="edge5" class="edge">
+<title>scikit&#45;learn&#45;&gt;joblib</title>
+<path fill="none" stroke="black" d="M507.08,-320.29C494.37,-312.92 479.98,-304.37 467.11,-296.22 449.77,-285.23 430.91,-272.42 415.28,-261.56"/>
+<polygon fill="black" stroke="black" points="417.45,-258.81 407.25,-255.95 413.45,-264.55 417.45,-258.81"/>
+<text text-anchor="middle" x="489.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=1.0.0</text>
 </g>
 <!-- scipy&#45;&gt;numpy -->
 <g id="edge6" class="edge">
@@ -170,7 +170,7 @@
 <text text-anchor="middle" x="228.11" y="-329.89" font-family="Times,serif" font-size="14.00">3.7</text>
 </g>
 <!-- nltk&#45;&gt;click -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>nltk&#45;&gt;click</title>
 <path fill="none" stroke="black" d="M205.65,-326.02C177.99,-308.69 130.7,-279.07 98.46,-258.87"/>
 <polygon fill="black" stroke="black" points="100.59,-256.07 90.26,-253.73 96.88,-262.01 100.59,-256.07"/>
@@ -179,9 +179,9 @@
 <!-- nltk&#45;&gt;joblib -->
 <g id="edge11" class="edge">
 <title>nltk&#45;&gt;joblib</title>
-<path fill="none" stroke="black" d="M253.33,-331.1C273.02,-323.44 300.57,-311.29 322.11,-296.22 333.88,-287.99 345.38,-277.3 355.07,-267.29"/>
-<polygon fill="black" stroke="black" points="357.41,-269.9 361.7,-260.21 352.31,-265.11 357.41,-269.9"/>
-<text text-anchor="middle" x="349.11" y="-285.02" font-family="Times,serif" font-size="14.00">any</text>
+<path fill="none" stroke="black" d="M253.64,-331.2C273.57,-323.6 301.41,-311.47 323.11,-296.22 334.55,-288.18 345.69,-277.73 355.09,-267.87"/>
+<polygon fill="black" stroke="black" points="357.64,-270.27 361.85,-260.54 352.49,-265.52 357.64,-270.27"/>
+<text text-anchor="middle" x="351.11" y="-285.02" font-family="Times,serif" font-size="14.00">any</text>
 </g>
 <!-- tqdm -->
 <g id="node14" class="node">
@@ -195,7 +195,7 @@
 <title>nltk&#45;&gt;tqdm</title>
 <path fill="none" stroke="black" d="M214.44,-317.8C206.01,-304.05 195.04,-286.16 185.59,-270.74"/>
 <polygon fill="black" stroke="black" points="188.64,-269.02 180.42,-262.32 182.67,-272.67 188.64,-269.02"/>
-<text text-anchor="middle" x="210.11" y="-285.02" font-family="Times,serif" font-size="14.00">any</text>
+<text text-anchor="middle" x="211.11" y="-285.02" font-family="Times,serif" font-size="14.00">any</text>
 </g>
 <!-- regex -->
 <g id="node15" class="node">
@@ -205,11 +205,11 @@
 <text text-anchor="middle" x="274.11" y="-225.15" font-family="Times,serif" font-size="14.00">2022.10.31</text>
 </g>
 <!-- nltk&#45;&gt;regex -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>nltk&#45;&gt;regex</title>
 <path fill="none" stroke="black" d="M238.78,-316.26C244.49,-303.51 251.64,-287.54 258.01,-273.31"/>
 <polygon fill="black" stroke="black" points="261.19,-274.78 262.08,-264.23 254.8,-271.92 261.19,-274.78"/>
-<text text-anchor="middle" x="285.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=2021.8.3</text>
+<text text-anchor="middle" x="286.61" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=2021.8.3</text>
 </g>
 <!-- gensim -->
 <g id="node16" class="node">
@@ -223,14 +223,14 @@
 <title>gensim&#45;&gt;numpy</title>
 <path fill="none" stroke="black" d="M763.63,-314.23C755.9,-277.79 741.77,-211.13 732.94,-169.5"/>
 <polygon fill="black" stroke="black" points="736.41,-169 730.91,-159.95 729.56,-170.46 736.41,-169"/>
-<text text-anchor="middle" x="778.11" y="-232.65" font-family="Times,serif" font-size="14.00">&gt;=1.17.0</text>
+<text text-anchor="middle" x="779.11" y="-232.65" font-family="Times,serif" font-size="14.00">&gt;=1.17.0</text>
 </g>
 <!-- gensim&#45;&gt;scipy -->
 <g id="edge15" class="edge">
 <title>gensim&#45;&gt;scipy</title>
 <path fill="none" stroke="black" d="M740.52,-321.96C712.94,-304.47 671.15,-277.96 641.7,-259.29"/>
 <polygon fill="black" stroke="black" points="643.82,-256.49 633.5,-254.09 640.08,-262.4 643.82,-256.49"/>
-<text text-anchor="middle" x="723.11" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=0.18.1</text>
+<text text-anchor="middle" x="724.11" y="-285.02" font-family="Times,serif" font-size="14.00">&gt;=0.18.1</text>
 </g>
 <!-- smart&#45;open -->
 <g id="node17" class="node">
