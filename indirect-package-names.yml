@@ -1,0 +1,13 @@
+---
+packages:
+- click
+- joblib
+- numpy
+- python-dateutil
+- pytz
+- regex
+- scipy
+- six
+- smart-open
+- threadpoolctl
+- tqdm
