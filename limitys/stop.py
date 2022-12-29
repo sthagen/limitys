@@ -909,7 +909,7 @@ WORDS = {
 }
 
 
-def cleanse(text, language_code: Language = EN) -> List[str]:
+def cleanse(text: str, language_code: Language = EN) -> List[str]:
     """Filter the stopwords of the language key out."""
     return [w for w in text.lower().split() if w not in WORDS[language_code]]
 

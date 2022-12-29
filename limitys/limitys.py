@@ -8,10 +8,10 @@ import sys
 from typing import Dict, Tuple, Union
 
 import yaml
-from gensim import downloader as model_api
-from gensim.corpora import Dictionary
-from gensim.models import TfidfModel
-from gensim.similarities import SparseTermSimilarityMatrix, WordEmbeddingSimilarityIndex
+from gensim import downloader as model_api  # type: ignore
+from gensim.corpora import Dictionary  # type: ignore
+from gensim.models import TfidfModel  # type: ignore
+from gensim.similarities import SparseTermSimilarityMatrix, WordEmbeddingSimilarityIndex  # type: ignore
 
 from limitys import ENCODING, log, stop
 
@@ -64,7 +64,7 @@ def similarity(options: argparse.Namespace) -> int:
         log.error('no documents to analyze')
         return 1
 
-    sentences = {k: stop.cleanse(docs[k], stop.EN) for k in docs}
+    sentences = {k: stop.cleanse(docs[k], stop.EN) for k in docs}  # type: ignore
 
     dictionary = Dictionary(list(sentences.values()))
     bags_of_words = {k: dictionary.doc2bow(sentences[k]) for k in sentences}
@@ -77,7 +77,8 @@ def similarity(options: argparse.Namespace) -> int:
     termsim_index = WordEmbeddingSimilarityIndex(model)
     termsim_matrix = SparseTermSimilarityMatrix(termsim_index, dictionary, tfidf)
 
-    pbm, row_heads = [], []
+    pbm = []  # type: ignore
+    row_heads = []
     col_heads = [key for key in tfidfs]
     for row, (i, bag) in enumerate(tfidfs.items()):
         pbm.append([])
@@ -95,7 +96,7 @@ def similarity(options: argparse.Namespace) -> int:
     matrix_rep.append(f'{" ".join(cell.rjust(12) for cell in col_heads[1:])}{" "*12}')
     matrix_rep.append(f'{" ".join(("-"*11).rjust(12) for _ in row_heads[1:])}{" "*12}')
     for rank, row in enumerate(pbm[:-1]):
-        upp_tri_mat_row = ' '.join(str('' if cell is None else round(cell, 3)).rjust(12) for cell in row[1:])
+        upp_tri_mat_row = ' '.join(str('' if cell is None else round(cell, 3)).rjust(12) for cell in row[1:])  # type: ignore
         matrix_rep.append(f'{upp_tri_mat_row} | {row_heads[rank] :12s}')
     if options.out_path is sys.stdout:
         log.info('- writing similarity upper triangle matrix to STDOUT')

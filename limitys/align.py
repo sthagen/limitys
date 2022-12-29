@@ -1,10 +1,14 @@
+from typing import no_type_check
+
 __all__ = ['Alignment', 'Hirschberg', 'Needleman', 'SegmentAlignment']
 
 
+@no_type_check
 class Alignment(object):
     SCORE_UNIFORM = 1
     SCORE_PROPORTION = 2
 
+    @no_type_check
     def __init__(self):
         self.seq_a = None
         self.seq_b = None
@@ -17,6 +21,7 @@ class Alignment(object):
         self.separator = '|'
         self.mode = Alignment.SCORE_UNIFORM
 
+    @no_type_check
     def set_score(self, score_null=None, score_sub=None, score_del=None, score_ins=None):
         if score_null is not None:
             self.score_null = score_null
@@ -27,6 +32,7 @@ class Alignment(object):
         if score_ins is not None:
             self.score_ins = score_ins
 
+    @no_type_check
     def match(self, a, b):
         if a == b and self.mode == Alignment.SCORE_UNIFORM:
             return self.score_null
@@ -37,18 +43,21 @@ class Alignment(object):
         else:
             return self.score_sub * len(a)
 
+    @no_type_check
     def delete(self, a):
         """Deleted elements are on seqa."""
         if self.mode == Alignment.SCORE_UNIFORM:
             return self.score_del
         return self.score_del * len(a)
 
+    @no_type_check
     def insert(self, a):
         """Inserted elements are on seqb."""
         if self.mode == Alignment.SCORE_UNIFORM:
             return self.score_ins
         return self.score_ins * len(a)
 
+    @no_type_check
     def score(self, aligned_seq_a, aligned_seq_b):
         score = 0
         for a, b in zip(aligned_seq_a, aligned_seq_b):
@@ -63,6 +72,7 @@ class Alignment(object):
                     score += self.score_sub
         return score
 
+    @no_type_check
     def map_alignment(self, aligned_seq_a, aligned_seq_b):
         map_b2a = []
         idx = 0
@@ -78,17 +88,21 @@ class Alignment(object):
         return map_b2a
 
 
+@no_type_check
 class Needleman(Alignment):
+    @no_type_check
     def __init__(self, *args):
         super(Needleman, self).__init__()
         self.semi_global = False
         self.matrix = None
 
+    @no_type_check
     def init_matrix(self):
         rows = self.len_a + 1
         cols = self.len_b + 1
         self.matrix = [[0] * cols for _ in range(rows)]
 
+    @no_type_check
     def compute_matrix(self):
         seq_a = self.seq_a
         seq_b = self.seq_b
@@ -112,6 +126,7 @@ class Needleman(Alignment):
                 score_ins = self.matrix[i][j - 1] + self.insert(seq_b[j - 1])
                 self.matrix[i][j] = max(score_sub, score_del, score_ins)
 
+    @no_type_check
     def backtrack(self):
         aligned_seq_a, aligned_seq_b = [], []
         seq_a, seq_b = self.seq_a, self.seq_b
@@ -168,6 +183,7 @@ class Needleman(Alignment):
 
         return aligned_seq_a, aligned_seq_b
 
+    @no_type_check
     def align(self, seq_a, seq_b, semi_global=True, mode=None):
         self.seq_a = seq_a
         self.seq_b = seq_b
@@ -183,11 +199,14 @@ class Needleman(Alignment):
         return self.backtrack()
 
 
+@no_type_check
 class Hirschberg(Alignment):
+    @no_type_check
     def __init__(self):
         super(Hirschberg, self).__init__()
         self.needleman = Needleman()
 
+    @no_type_check
     def last_row(self, seqa, seqb):
         lena = len(seqa)
         lenb = len(seqb)
@@ -210,6 +229,7 @@ class Hirschberg(Alignment):
 
         return pre_row
 
+    @no_type_check
     def align_rec(self, seq_a, seq_b):
         aligned_a, aligned_b = [], []
         len_a, len_b = len(seq_a), len(seq_b)
@@ -246,6 +266,7 @@ class Hirschberg(Alignment):
 
         return aligned_a, aligned_b
 
+    @no_type_check
     def align(self, seq_a, seq_b, mode=None):
         self.seq_a = seq_a
         self.seq_b = seq_b
@@ -256,12 +277,15 @@ class Hirschberg(Alignment):
         return self.align_rec(self.seq_a, self.seq_b)
 
 
+@no_type_check
 class SegmentAlignment(Alignment):
     step = 50
 
+    @no_type_check
     def __init__(self):
         super(SegmentAlignment, self).__init__()
 
+    @no_type_check
     @classmethod
     def skip_same(cls, seq_a, seq_b, curr_a, curr_b, aligned_seq_a, aligned_seq_b):
         while True:
@@ -278,6 +302,7 @@ class SegmentAlignment(Alignment):
 
         return curr_a, curr_b
 
+    @no_type_check
     @classmethod
     def align(cls, seq_left, seq_right, segment_half=False, base_alignment='Needleman', semi_global=True):
         if len(seq_left) < len(seq_right):
