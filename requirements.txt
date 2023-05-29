@@ -2,6 +2,6 @@ PyYAML==6.0
 gensim==4.2.0
 nltk==3.7
 numpy==1.24.3
-pandas==2.0.1
+pandas==2.0.2
 scikit-learn==1.1.2
-typer==0.7.0
+typer==0.9.0
