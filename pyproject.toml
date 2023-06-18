@@ -15,6 +15,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.9",
 ]
 keywords = ["developer-tools", "surviving-process-bloat", "requirements-engineering", "validation", "verification"]
@@ -22,7 +23,7 @@ dependencies = [
     "PyYAML >= 6.0",
     "gensim == 4.2.0",
     "nltk >= 3.7",
-    "numpy >= 1.24.3",
+    "numpy >= 1.25.0",
     "pandas >= 2.0.2",
     "scikit-learn >= 1.1.2",
     "typer >= 0.9.0",
@@ -49,7 +50,7 @@ exclude = ["test*"]
 [tool.black]
 line-length = 120
 skip-string-normalization = true
-target-version = ["py39", "py310", "py311"]
+target-version = ["py39", "py310", "py311", "py312"]
 
 [tool.coverage.run]
 branch = true
