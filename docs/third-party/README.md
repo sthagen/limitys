@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([ccc72dd4 ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:ccc72dd4d93fef00b0862e477dffb3a5ad7a28aab9bb8d8d27b7d75939b56659")).
-<!--[[[end]]] (checksum: a28aefe8c9f541da90d9bf4cdfd62030)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([fbfa7722 ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:fbfa7722788dcc2a88469926c7c6d410f7945314def9a72831896aedfa852d0f")).
+<!--[[[end]]] (checksum: a7d59b0a43fe6d398275244180513281)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -16,10 +16,10 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [gensim](http://radimrehurek.com/gensim)   | [4.2.0](https://pypi.org/project/gensim/4.2.0/)       | LGPL-2.1-only           | Radim Rehurek                                       | Python framework for fast Vector Space Modelling                        |
 | [nltk](https://www.nltk.org/)              | [3.7](https://pypi.org/project/nltk/3.7/)             | Apache Software License | NLTK Team                                           | Natural Language Toolkit                                                |
 | [numpy](https://www.numpy.org)             | [1.25.0](https://pypi.org/project/numpy/1.25.0/)      | BSD License             | Travis E. Oliphant et al.                           | Fundamental package for array computing in Python                       |
-| [pandas](https://pandas.pydata.org)        | [2.0.2](https://pypi.org/project/pandas/2.0.2/)       | BSD License             | The Pandas Development Team <pandas-dev@python.org> | Powerful data structures for data analysis, time series, and statistics |
+| [pandas](https://pandas.pydata.org)        | [2.0.3](https://pypi.org/project/pandas/2.0.3/)       | BSD License             | The Pandas Development Team <pandas-dev@python.org> | Powerful data structures for data analysis, time series, and statistics |
 | [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | Andreas Mueller                                     | A set of python modules for machine learning and data mining            |
 | [typer](https://github.com/tiangolo/typer) | [0.9.0](https://pypi.org/project/typer/0.9.0/)        | MIT License             | Sebastián Ramírez                                   | Typer, build great CLIs. Easy to code. Based on Python type hints.      |
-<!--[[[end]]] (checksum: c5d47108943665610142b8969d55188c)-->
+<!--[[[end]]] (checksum: dcaeea50f36d6d279ef91ffd6ed55ba5)-->
 
 ### Indirect Dependencies
 
@@ -62,7 +62,7 @@ nltk==3.7
 ├── joblib [required: Any, installed: 1.2.0]
 ├── regex [required: >=2021.8.3, installed: 2022.10.31]
 └── tqdm [required: Any, installed: 4.64.1]
-pandas==2.0.2
+pandas==2.0.3
 ├── numpy [required: >=1.21.0, installed: 1.25.0]
 ├── python-dateutil [required: >=2.8.2, installed: 2.8.2]
 │   └── six [required: >=1.5, installed: 1.16.0]
@@ -79,4 +79,4 @@ typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.4.0]
 ````
-<!--[[[end]]] (checksum: 721c8e341341181dfd7d71a59fd99e3c)-->
+<!--[[[end]]] (checksum: 67b07d3f39cab8a44fdeb601045f720a)-->

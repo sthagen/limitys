@@ -139,7 +139,7 @@
 <title>pandas</title>
 <ellipse fill="none" stroke="black" cx="603.97" cy="-229.55" rx="37.83" ry="25.81"/>
 <text text-anchor="middle" x="603.97" y="-230.5" font-family="Times,serif" font-size="14.00">pandas</text>
-<text text-anchor="middle" x="603.97" y="-216.25" font-family="Times,serif" font-size="14.00">2.0.2</text>
+<text text-anchor="middle" x="603.97" y="-216.25" font-family="Times,serif" font-size="14.00">2.0.3</text>
 </g>
 <!-- pandas&#45;&gt;numpy -->
 <g id="edge12" class="edge">

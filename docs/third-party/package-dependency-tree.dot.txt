@@ -24,7 +24,7 @@ digraph {
 	pandas -> numpy [label=">=1.21.0"]
 	pandas -> pytz [label=">=2020.1"]
 	pandas -> tzdata [label=">=2022.1"]
-	pandas [label="pandas\n2.0.2"]
+	pandas [label="pandas\n2.0.3"]
 	pytz [label="pytz\n2022.7"]
 	pyyaml [label="PyYAML\n6.0"]
 	regex [label="regex\n2022.10.31"]
