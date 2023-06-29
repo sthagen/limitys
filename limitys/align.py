@@ -334,7 +334,6 @@ class SegmentAlignment(Alignment):
 
         insert_length = 0
         while curr_a < len_a and curr_b < len_b:
-
             if not (is_needleman and semi_global):
                 curr_a, curr_b = cls.skip_same(seq_a, seq_b, curr_a, curr_b, aligned_a, aligned_b)
 

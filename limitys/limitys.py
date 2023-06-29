@@ -5,7 +5,7 @@ import json
 import logging
 import pathlib
 import sys
-from typing import Dict, Tuple, Union
+from typing import Dict, Tuple, Union, no_type_check
 
 import yaml
 from gensim import downloader as model_api  # type: ignore
@@ -45,6 +45,7 @@ def load_documents(path: PathLike = DEFAULT_DOCUMENTS_NAME) -> Documents:
     return {}
 
 
+@no_type_check
 def similarity(options: argparse.Namespace) -> int:
     """Drive the verification."""
     documents = pathlib.Path(options.documents)
@@ -64,7 +65,7 @@ def similarity(options: argparse.Namespace) -> int:
         log.error('no documents to analyze')
         return 1
 
-    sentences = {k: stop.cleanse(docs[k], stop.EN) for k in docs}  # type: ignore
+    sentences = {k: stop.cleanse(docs[k], stop.EN) for k in docs}
 
     dictionary = Dictionary(list(sentences.values()))
     bags_of_words = {k: dictionary.doc2bow(sentences[k]) for k in sentences}
@@ -77,7 +78,7 @@ def similarity(options: argparse.Namespace) -> int:
     termsim_index = WordEmbeddingSimilarityIndex(model)
     termsim_matrix = SparseTermSimilarityMatrix(termsim_index, dictionary, tfidf)
 
-    pbm = []  # type: ignore
+    pbm = []
     row_heads = []
     col_heads = [key for key in tfidfs]
     for row, (i, bag) in enumerate(tfidfs.items()):
@@ -96,7 +97,7 @@ def similarity(options: argparse.Namespace) -> int:
     matrix_rep.append(f'{" ".join(cell.rjust(12) for cell in col_heads[1:])}{" "*12}')
     matrix_rep.append(f'{" ".join(("-"*11).rjust(12) for _ in row_heads[1:])}{" "*12}')
     for rank, row in enumerate(pbm[:-1]):
-        upp_tri_mat_row = ' '.join(str('' if cell is None else round(cell, 3)).rjust(12) for cell in row[1:])  # type: ignore
+        upp_tri_mat_row = ' '.join(str('' if cell is None else round(cell, 3)).rjust(12) for cell in row[1:])
         matrix_rep.append(f'{upp_tri_mat_row} | {row_heads[rank] :12s}')
     if options.out_path is sys.stdout:
         log.info('- writing similarity upper triangle matrix to STDOUT')

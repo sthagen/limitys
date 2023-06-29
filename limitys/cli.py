@@ -88,4 +88,4 @@ def main(argv: Union[List[str], None] = None) -> int:
     options = parse_request(argv)
     if isinstance(options, int):
         return 0
-    return api.similarity(options)
+    return api.similarity(options)  # type: ignore
