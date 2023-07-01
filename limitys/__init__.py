@@ -1,3 +1,4 @@
+"""Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies."""
 import datetime as dti
 import logging
 import os
@@ -12,16 +13,17 @@ __version_info__ = tuple(
 )
 __all__: List[str] = []
 
-APP_NAME = 'Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies.'
-APP_ALIAS = 'limitys'
-APP_ENV = 'LIMITYS'
+APP_ALIAS = str(pathlib.Path(__file__).parent.name)
+APP_ENV = APP_ALIAS.upper()
+APP_NAME = locals()['__doc__']
 DEBUG = bool(os.getenv(f'{APP_ENV}_DEBUG', ''))
 VERBOSE = bool(os.getenv(f'{APP_ENV}_VERBOSE', ''))
 QUIET = False
 STRICT = bool(os.getenv(f'{APP_ENV}_STRICT', ''))
 ENCODING = 'utf-8'
 ENCODING_ERRORS_POLICY = 'ignore'
-DEFAULT_CONFIG_NAME = '.liitos.json'
+DEFAULT_CONFIG_NAME = f'.{APP_ALIAS}.json'
+
 DEFAULT_LF_ONLY = 'YES'
 log = logging.getLogger()  # Module level logger is sufficient
 LOG_FOLDER = pathlib.Path('logs')
