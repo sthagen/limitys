@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([26a1eb51 ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:26a1eb51176ff8a4fc54f68701b6bbc5249bf241004eae64fb025cf3bfd50ae1")).
-<!--[[[end]]] (checksum: 02a21d767ff9093649461f02a8c201e5)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([25cd9fca ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:25cd9fca621bda8b421602b9ce4996d760dbc4ef473fc1e688c075fe33af30d4")).
+<!--[[[end]]] (checksum: b5661de2d34d08f0e30facf97424dd18)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -17,9 +17,9 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [nltk](https://www.nltk.org/)              | [3.7](https://pypi.org/project/nltk/3.7/)             | Apache Software License | NLTK Team                                           | Natural Language Toolkit                                                |
 | [numpy](https://www.numpy.org)             | [1.25.1](https://pypi.org/project/numpy/1.25.1/)      | BSD License             | Travis E. Oliphant et al.                           | Fundamental package for array computing in Python                       |
 | [pandas](https://pandas.pydata.org)        | [2.0.3](https://pypi.org/project/pandas/2.0.3/)       | BSD License             | The Pandas Development Team <pandas-dev@python.org> | Powerful data structures for data analysis, time series, and statistics |
-| [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | UNKNOWN                                             | A set of python modules for machine learning and data mining            |
+| [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | Andreas Mueller                                     | A set of python modules for machine learning and data mining            |
 | [typer](https://github.com/tiangolo/typer) | [0.9.0](https://pypi.org/project/typer/0.9.0/)        | MIT License             | Sebastián Ramírez                                   | Typer, build great CLIs. Easy to code. Based on Python type hints.      |
-<!--[[[end]]] (checksum: 8d431c12a325086d4c346bf795d65600)-->
+<!--[[[end]]] (checksum: 5d76daea1d8a93d2f5a39610c7f490e6)-->
 
 ### Indirect Dependencies
 
@@ -35,9 +35,9 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [six](https://github.com/benjaminp/six)                          | [1.16.0](https://pypi.org/project/six/1.16.0/)             | MIT License                                       | Benjamin Peterson                                                                     | Python 2 and 3 compatibility utilities                                            |
 | [smart-open](https://github.com/piskvorky/smart_open)            | [6.3.0](https://pypi.org/project/smart-open/6.3.0/)        | MIT License                                       | Radim Rehurek                                                                         | Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...) |
 | [threadpoolctl](https://github.com/joblib/threadpoolctl)         | [3.1.0](https://pypi.org/project/threadpoolctl/3.1.0/)     | BSD License                                       | Thomas Moreau                                                                         | threadpoolctl                                                                     |
-| [tqdm](https://tqdm.github.io)                                   | [4.64.1](https://pypi.org/project/tqdm/4.64.1/)            | MIT License; Mozilla Public License 2.0 (MPL 2.0) | UNKNOWN                                                                               | Fast, Extensible Progress Meter                                                   |
+| [tqdm](https://tqdm.github.io)                                   | [4.64.1](https://pypi.org/project/tqdm/4.64.1/)            | MIT License; Mozilla Public License 2.0 (MPL 2.0) | "tqdm developers" <python.tqdm@gmail.com>                                             | Fast, Extensible Progress Meter                                                   |
 | [typing_extensions](https://github.com/python/typing_extensions) | [4.4.0](https://pypi.org/project/typing_extensions/4.4.0/) | Python Software Foundation License                | "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com> | Backported and Experimental Type Hints for Python 3.7+                            |
-<!--[[[end]]] (checksum: a2f246ef77afc522849b67ed45c82821)-->
+<!--[[[end]]] (checksum: f2697e74d992573f269292aa799dc636)-->
 
 ## Dependency Tree(s)
 
