@@ -1,0 +1,14 @@
+name: limitys
+description: Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies.
+license_spdx: MIT
+version: 2022.9.25
+spec_version: 1.0
+home_url: https://git.sr.ht/~sthagen/limitys
+news_url: https://libraries.io/pypi/limitys/versions.atom
+date: 2022-09-25
+about_resource: ./
+libraries_io_url: https://libraries.io/pypi/limitys?number=2022.9.25
+vcs_tool: git
+vcs_repository: https://git.sr.ht/~sthagen/limitys
+vcs_branch: default
+
