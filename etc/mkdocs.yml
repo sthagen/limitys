@@ -1,5 +1,7 @@
 site_name: Limitys
 site_description: "Overlap (Finnish: limitys) assesses sentences from constrained and overlapping vocabularies."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
