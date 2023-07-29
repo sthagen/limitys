@@ -11,3 +11,4 @@ packages:
 - smart-open
 - threadpoolctl
 - tqdm
+- typing-extensions
