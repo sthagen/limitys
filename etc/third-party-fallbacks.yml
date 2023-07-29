@@ -33,6 +33,7 @@ authors:
   numcodecs: Alistair Miles
   pyparsing: Paul McGuire
   scikit-learn: Andreas Mueller
+  scipy: '"SciPy Developers" <scipy-dev@python.org>'
   starlette: Tom Christie
   taksonomia: Stefan Hagen
   tomli: Taneli Hukkinen
