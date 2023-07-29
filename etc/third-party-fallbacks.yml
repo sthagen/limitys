@@ -32,9 +32,11 @@ authors:
   msgspec: Jim Crist-Harif
   numcodecs: Alistair Miles
   pyparsing: Paul McGuire
+  scikit-learn: Andreas Mueller
   starlette: Tom Christie
   taksonomia: Stefan Hagen
   tomli: Taneli Hukkinen
+  tqdm:  '"tqdm developers" <python.tqdm@gmail.com>'
   typing-extensions: The Python Typing Team
   zarr: Alistair Miles
 descriptions:
