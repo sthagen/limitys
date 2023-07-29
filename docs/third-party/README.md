@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([fbfa7722 ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:fbfa7722788dcc2a88469926c7c6d410f7945314def9a72831896aedfa852d0f")).
-<!--[[[end]]] (checksum: a7d59b0a43fe6d398275244180513281)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([26a1eb51 ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:26a1eb51176ff8a4fc54f68701b6bbc5249bf241004eae64fb025cf3bfd50ae1")).
+<!--[[[end]]] (checksum: 02a21d767ff9093649461f02a8c201e5)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -12,31 +12,32 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 <!--[[[fill direct_dependencies_table()]]]-->
 | Name                                       | Version                                               | License                 | Author                                              | Description (from packaging data)                                       |
 |:-------------------------------------------|:------------------------------------------------------|:------------------------|:----------------------------------------------------|:------------------------------------------------------------------------|
-| [PyYAML](https://pyyaml.org/)              | [6.0](https://pypi.org/project/PyYAML/6.0/)           | MIT License             | Kirill Simonov                                      | YAML parser and emitter for Python                                      |
+| [PyYAML](https://pyyaml.org/)              | [6.0.1](https://pypi.org/project/PyYAML/6.0.1/)       | MIT License             | Kirill Simonov                                      | YAML parser and emitter for Python                                      |
 | [gensim](http://radimrehurek.com/gensim)   | [4.2.0](https://pypi.org/project/gensim/4.2.0/)       | LGPL-2.1-only           | Radim Rehurek                                       | Python framework for fast Vector Space Modelling                        |
 | [nltk](https://www.nltk.org/)              | [3.7](https://pypi.org/project/nltk/3.7/)             | Apache Software License | NLTK Team                                           | Natural Language Toolkit                                                |
-| [numpy](https://www.numpy.org)             | [1.25.0](https://pypi.org/project/numpy/1.25.0/)      | BSD License             | Travis E. Oliphant et al.                           | Fundamental package for array computing in Python                       |
+| [numpy](https://www.numpy.org)             | [1.25.1](https://pypi.org/project/numpy/1.25.1/)      | BSD License             | Travis E. Oliphant et al.                           | Fundamental package for array computing in Python                       |
 | [pandas](https://pandas.pydata.org)        | [2.0.3](https://pypi.org/project/pandas/2.0.3/)       | BSD License             | The Pandas Development Team <pandas-dev@python.org> | Powerful data structures for data analysis, time series, and statistics |
-| [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | Andreas Mueller                                     | A set of python modules for machine learning and data mining            |
+| [scikit-learn](http://scikit-learn.org)    | [1.1.2](https://pypi.org/project/scikit-learn/1.1.2/) | BSD License             | UNKNOWN                                             | A set of python modules for machine learning and data mining            |
 | [typer](https://github.com/tiangolo/typer) | [0.9.0](https://pypi.org/project/typer/0.9.0/)        | MIT License             | Sebastián Ramírez                                   | Typer, build great CLIs. Easy to code. Based on Python type hints.      |
-<!--[[[end]]] (checksum: dcaeea50f36d6d279ef91ffd6ed55ba5)-->
+<!--[[[end]]] (checksum: 8d431c12a325086d4c346bf795d65600)-->
 
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                                     | Version                                                  | License                                           | Author                                    | Description (from packaging data)                                                                                                                  |
-|:---------------------------------------------------------|:---------------------------------------------------------|:--------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [click](https://palletsprojects.com/p/click/)            | [8.1.3](https://pypi.org/project/click/8.1.3/)           | BSD License                                       | Armin Ronacher                            | Composable command line interface toolkit                                                                                                          |
-| [joblib](https://joblib.readthedocs.io)                  | [1.2.0](https://pypi.org/project/joblib/1.2.0/)          | BSD License                                       | Gael Varoquaux                            | Lightweight pipelining with Python functions                                                                                                       |
-| [python-dateutil](https://github.com/dateutil/dateutil)  | [2.8.2](https://pypi.org/project/python-dateutil/2.8.2/) | Apache Software License; BSD License              | Gustavo Niemeyer                          | Extensions to the standard Python datetime module                                                                                                  |
-| [pytz](http://pythonhosted.org/pytz)                     | [2022.7](https://pypi.org/project/pytz/2022.7/)          | MIT License                                       | Stuart Bishop                             | World timezone definitions, modern and historical                                                                                                  |
-| [regex](https://github.com/mrabarnett/mrab-regex)        | [2022.10.31](https://pypi.org/project/regex/2022.10.31/) | Apache Software License                           | Matthew Barnett                           | Alternative regular expression module, to replace re.                                                                                              |
-| [scipy](https://scipy.org/)                              | [1.9.3](https://pypi.org/project/scipy/1.9.3/)           | BSD License                                       | "SciPy Developers" <scipy-dev@python.org> | Fundamental algorithms for scientific computing in Python                                                                                          |
-| [six](https://github.com/benjaminp/six)                  | [1.16.0](https://pypi.org/project/six/1.16.0/)           | MIT License                                       | Benjamin Peterson                         | Python 2 and 3 compatibility utilities                                                                                                             |
-| [smart-open](https://github.com/piskvorky/smart_open)    | [6.3.0](https://pypi.org/project/smart-open/6.3.0/)      | MIT License                                       | Radim Rehurek                             | Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...)                                                                  |
-| [threadpoolctl](https://github.com/joblib/threadpoolctl) | [3.1.0](https://pypi.org/project/threadpoolctl/3.1.0/)   | BSD License                                       | Thomas Moreau                             | Python helpers to limit the number of threads used in native libraries that handle their own internal threadpool (BLAS and OpenMP implementations) |
-| [tqdm](https://tqdm.github.io)                           | [4.64.1](https://pypi.org/project/tqdm/4.64.1/)          | MIT License; Mozilla Public License 2.0 (MPL 2.0) | "tqdm developers" <python.tqdm@gmail.com> | Fast, Extensible Progress Meter                                                                                                                    |
-<!--[[[end]]] (checksum: 6845d7ccd5964e9f2ce663ced4b4dde4)-->
+| Name                                                             | Version                                                    | License                                           | Author                                                                                | Description (from packaging data)                                                 |
+|:-----------------------------------------------------------------|:-----------------------------------------------------------|:--------------------------------------------------|:--------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
+| [click](https://palletsprojects.com/p/click/)                    | [8.1.3](https://pypi.org/project/click/8.1.3/)             | BSD License                                       | Armin Ronacher                                                                        | Composable command line interface toolkit                                         |
+| [joblib](https://joblib.readthedocs.io)                          | [1.2.0](https://pypi.org/project/joblib/1.2.0/)            | BSD License                                       | Gael Varoquaux                                                                        | Lightweight pipelining with Python functions                                      |
+| [python-dateutil](https://github.com/dateutil/dateutil)          | [2.8.2](https://pypi.org/project/python-dateutil/2.8.2/)   | Apache Software License; BSD License              | Gustavo Niemeyer                                                                      | Extensions to the standard Python datetime module                                 |
+| [pytz](http://pythonhosted.org/pytz)                             | [2022.7](https://pypi.org/project/pytz/2022.7/)            | MIT License                                       | Stuart Bishop                                                                         | World timezone definitions, modern and historical                                 |
+| [regex](https://github.com/mrabarnett/mrab-regex)                | [2022.10.31](https://pypi.org/project/regex/2022.10.31/)   | Apache Software License                           | Matthew Barnett                                                                       | Alternative regular expression module, to replace re.                             |
+| [scipy](https://scipy.org/)                                      | [1.9.3](https://pypi.org/project/scipy/1.9.3/)             | BSD License                                       | UNKNOWN                                                                               | Fundamental algorithms for scientific computing in Python                         |
+| [six](https://github.com/benjaminp/six)                          | [1.16.0](https://pypi.org/project/six/1.16.0/)             | MIT License                                       | Benjamin Peterson                                                                     | Python 2 and 3 compatibility utilities                                            |
+| [smart-open](https://github.com/piskvorky/smart_open)            | [6.3.0](https://pypi.org/project/smart-open/6.3.0/)        | MIT License                                       | Radim Rehurek                                                                         | Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...) |
+| [threadpoolctl](https://github.com/joblib/threadpoolctl)         | [3.1.0](https://pypi.org/project/threadpoolctl/3.1.0/)     | BSD License                                       | Thomas Moreau                                                                         | threadpoolctl                                                                     |
+| [tqdm](https://tqdm.github.io)                                   | [4.64.1](https://pypi.org/project/tqdm/4.64.1/)            | MIT License; Mozilla Public License 2.0 (MPL 2.0) | UNKNOWN                                                                               | Fast, Extensible Progress Meter                                                   |
+| [typing_extensions](https://github.com/python/typing_extensions) | [4.4.0](https://pypi.org/project/typing_extensions/4.4.0/) | Python Software Foundation License                | "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com> | Backported and Experimental Type Hints for Python 3.7+                            |
+<!--[[[end]]] (checksum: a2f246ef77afc522849b67ed45c82821)-->
 
 ## Dependency Tree(s)
 
@@ -53,9 +54,9 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
 gensim==4.2.0
-├── numpy [required: >=1.17.0, installed: 1.25.0]
+├── numpy [required: >=1.17.0, installed: 1.25.1]
 ├── scipy [required: >=0.18.1, installed: 1.9.3]
-│   └── numpy [required: >=1.18.5,<1.26.0, installed: 1.25.0]
+│   └── numpy [required: >=1.18.5,<1.26.0, installed: 1.25.1]
 └── smart-open [required: >=1.8.1, installed: 6.3.0]
 nltk==3.7
 ├── click [required: Any, installed: 8.1.3]
@@ -63,20 +64,20 @@ nltk==3.7
 ├── regex [required: >=2021.8.3, installed: 2022.10.31]
 └── tqdm [required: Any, installed: 4.64.1]
 pandas==2.0.3
-├── numpy [required: >=1.21.0, installed: 1.25.0]
+├── numpy [required: >=1.21.0, installed: 1.25.1]
 ├── python-dateutil [required: >=2.8.2, installed: 2.8.2]
 │   └── six [required: >=1.5, installed: 1.16.0]
 ├── pytz [required: >=2020.1, installed: 2022.7]
 └── tzdata [required: >=2022.1, installed: 2023.3]
-PyYAML==6.0
+PyYAML==6.0.1
 scikit-learn==1.1.2
 ├── joblib [required: >=1.0.0, installed: 1.2.0]
-├── numpy [required: >=1.17.3, installed: 1.25.0]
+├── numpy [required: >=1.17.3, installed: 1.25.1]
 ├── scipy [required: >=1.3.2, installed: 1.9.3]
-│   └── numpy [required: >=1.18.5,<1.26.0, installed: 1.25.0]
+│   └── numpy [required: >=1.18.5,<1.26.0, installed: 1.25.1]
 └── threadpoolctl [required: >=2.0.0, installed: 3.1.0]
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.4.0]
 ````
-<!--[[[end]]] (checksum: 67b07d3f39cab8a44fdeb601045f720a)-->
+<!--[[[end]]] (checksum: 325ea33ee8d957673b91eff5a0263fad)-->
