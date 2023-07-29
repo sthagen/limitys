@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([25cd9fca ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:25cd9fca621bda8b421602b9ce4996d760dbc4ef473fc1e688c075fe33af30d4")).
-<!--[[[end]]] (checksum: b5661de2d34d08f0e30facf97424dd18)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json) with SHA256 checksum ([0903cfec ...](https://git.sr.ht/~sthagen/limitys/blob/default/sbom/cdx.json.sha256 "sha256:0903cfecb21fc27cc9a3ace56d4e6c37fabe15e171d2b7358fb440bc7e48d16a")).
+<!--[[[end]]] (checksum: 1b3a571aacf834deaef620a3591e7d14)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -31,13 +31,13 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [python-dateutil](https://github.com/dateutil/dateutil)          | [2.8.2](https://pypi.org/project/python-dateutil/2.8.2/)   | Apache Software License; BSD License              | Gustavo Niemeyer                                                                      | Extensions to the standard Python datetime module                                 |
 | [pytz](http://pythonhosted.org/pytz)                             | [2022.7](https://pypi.org/project/pytz/2022.7/)            | MIT License                                       | Stuart Bishop                                                                         | World timezone definitions, modern and historical                                 |
 | [regex](https://github.com/mrabarnett/mrab-regex)                | [2022.10.31](https://pypi.org/project/regex/2022.10.31/)   | Apache Software License                           | Matthew Barnett                                                                       | Alternative regular expression module, to replace re.                             |
-| [scipy](https://scipy.org/)                                      | [1.9.3](https://pypi.org/project/scipy/1.9.3/)             | BSD License                                       | UNKNOWN                                                                               | Fundamental algorithms for scientific computing in Python                         |
+| [scipy](https://scipy.org/)                                      | [1.9.3](https://pypi.org/project/scipy/1.9.3/)             | BSD License                                       | "SciPy Developers" <scipy-dev@python.org>                                             | Fundamental algorithms for scientific computing in Python                         |
 | [six](https://github.com/benjaminp/six)                          | [1.16.0](https://pypi.org/project/six/1.16.0/)             | MIT License                                       | Benjamin Peterson                                                                     | Python 2 and 3 compatibility utilities                                            |
 | [smart-open](https://github.com/piskvorky/smart_open)            | [6.3.0](https://pypi.org/project/smart-open/6.3.0/)        | MIT License                                       | Radim Rehurek                                                                         | Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...) |
 | [threadpoolctl](https://github.com/joblib/threadpoolctl)         | [3.1.0](https://pypi.org/project/threadpoolctl/3.1.0/)     | BSD License                                       | Thomas Moreau                                                                         | threadpoolctl                                                                     |
 | [tqdm](https://tqdm.github.io)                                   | [4.64.1](https://pypi.org/project/tqdm/4.64.1/)            | MIT License; Mozilla Public License 2.0 (MPL 2.0) | "tqdm developers" <python.tqdm@gmail.com>                                             | Fast, Extensible Progress Meter                                                   |
 | [typing_extensions](https://github.com/python/typing_extensions) | [4.4.0](https://pypi.org/project/typing_extensions/4.4.0/) | Python Software Foundation License                | "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com> | Backported and Experimental Type Hints for Python 3.7+                            |
-<!--[[[end]]] (checksum: f2697e74d992573f269292aa799dc636)-->
+<!--[[[end]]] (checksum: e7d1113613ca40da1233c60632b788f9)-->
 
 ## Dependency Tree(s)
 
