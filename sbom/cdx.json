@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:9d64bff2-b926-406d-9442-233c087d61ff",
+  "serialNumber": "urn:uuid:bd2d96e5-6777-4a87-bfbf-50c1300bcaff",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-13T13:17:10.998750+00:00",
+    "timestamp": "2023-08-15T06:07:34.601268+00:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -56,21 +56,21 @@
   "components": [
     {
       "type": "library",
-      "bom-ref": "b06b9a28-15d3-4e9d-aeb8-d1b90bf44d9d",
+      "bom-ref": "1eadba51-262b-41ba-96f6-333bde1c84b9",
       "name": "PyYAML",
       "version": "6.0.1",
       "purl": "pkg:pypi/pyyaml@6.0.1"
     },
     {
       "type": "library",
-      "bom-ref": "75638bc4-561d-4263-b4d7-89035d1dac23",
+      "bom-ref": "fb966e4b-c43e-4081-bfe8-dfb196d0b406",
       "name": "gensim",
       "version": "4.3.1",
       "purl": "pkg:pypi/gensim@4.3.1"
     },
     {
       "type": "library",
-      "bom-ref": "738cd9af-265c-4fc4-871d-e4ef39f1235a",
+      "bom-ref": "2ae97dd0-d552-4173-bfa5-c19fa0e8e078",
       "name": "typer",
       "version": "0.9.0",
       "purl": "pkg:pypi/typer@0.9.0"
@@ -78,15 +78,15 @@
   ],
   "dependencies": [
     {
-      "ref": "b06b9a28-15d3-4e9d-aeb8-d1b90bf44d9d",
+      "ref": "1eadba51-262b-41ba-96f6-333bde1c84b9",
       "dependsOn": []
     },
     {
-      "ref": "75638bc4-561d-4263-b4d7-89035d1dac23",
+      "ref": "fb966e4b-c43e-4081-bfe8-dfb196d0b406",
       "dependsOn": []
     },
     {
-      "ref": "738cd9af-265c-4fc4-871d-e4ef39f1235a",
+      "ref": "2ae97dd0-d552-4173-bfa5-c19fa0e8e078",
       "dependsOn": []
     }
   ]
