@@ -1,0 +1,93 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:13c13ef5-9ca7-403c-b9bc-5c4f8dd6655a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-08-22T18:46:20.449088+00:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-bom",
+        "version": "3.11.2"
+      },
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-python-lib",
+        "version": "3.1.5",
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
+            "type": "build-system"
+          },
+          {
+            "url": "https://pypi.org/project/cyclonedx-python-lib/",
+            "type": "distribution"
+          },
+          {
+            "url": "https://cyclonedx.github.io/cyclonedx-python-lib/",
+            "type": "documentation"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues",
+            "type": "issue-tracker"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE",
+            "type": "license"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md",
+            "type": "release-notes"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "f428f75c-3ad5-489b-9f6c-ed05c14c9022",
+      "name": "PyYAML",
+      "version": "6.0.1",
+      "purl": "pkg:pypi/pyyaml@6.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "4246acf7-44ed-4c3d-a08b-7a1adc4ca3ec",
+      "name": "gensim",
+      "version": "4.3.1",
+      "purl": "pkg:pypi/gensim@4.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "d13010ff-7dc7-4470-b84a-89bc34ee85a5",
+      "name": "typer",
+      "version": "0.9.0",
+      "purl": "pkg:pypi/typer@0.9.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "f428f75c-3ad5-489b-9f6c-ed05c14c9022",
+      "dependsOn": []
+    },
+    {
+      "ref": "4246acf7-44ed-4c3d-a08b-7a1adc4ca3ec",
+      "dependsOn": []
+    },
+    {
+      "ref": "d13010ff-7dc7-4470-b84a-89bc34ee85a5",
+      "dependsOn": []
+    }
+  ]
+}
