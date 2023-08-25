@@ -5,7 +5,7 @@ digraph {
 	gensim -> "smart-open" [label=">=1.8.1"]
 	gensim -> numpy [label=">=1.18.5"]
 	gensim -> scipy [label=">=1.7.0"]
-	gensim [label="gensim\n4.3.1"]
+	gensim [label="gensim\n4.3.2"]
 	numpy [label="numpy\n1.25.2"]
 	pyyaml [label="PyYAML\n6.0.1"]
 	scipy -> numpy [label=">=1.21.6,<1.28.0"]

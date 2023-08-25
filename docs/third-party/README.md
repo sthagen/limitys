@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([73ac7715 ...](https://git.sr.ht/~sthagen/limitys/blob/default/etc/sbom/cdx.json.sha256 "sha256:73ac7715b5d7fa71c9b6df62ef4a4694a4e35acedea7b8418b0ac6fafc26f3a4")).
-<!--[[[end]]] (checksum: 5c2a0f56ca2fb5bf6bf7f5af649c3494)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/limitys/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([299ff373 ...](https://git.sr.ht/~sthagen/limitys/blob/default/etc/sbom/cdx.json.sha256 "sha256:299ff373b69cacc59bd30825b50045e7d569a6f12b61f8a989f073f653e44656")).
+<!--[[[end]]] (checksum: 7e51eeae55d5e52fb1d2b0f6134f520a)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -13,9 +13,9 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | Name                                       | Version                                         | License       | Author            | Description (from packaging data)                                  |
 |:-------------------------------------------|:------------------------------------------------|:--------------|:------------------|:-------------------------------------------------------------------|
 | [PyYAML](https://pyyaml.org/)              | [6.0.1](https://pypi.org/project/PyYAML/6.0.1/) | MIT License   | Kirill Simonov    | YAML parser and emitter for Python                                 |
-| [gensim](http://radimrehurek.com/gensim)   | [4.3.1](https://pypi.org/project/gensim/4.3.1/) | LGPL-2.1-only | Radim Rehurek     | Python framework for fast Vector Space Modelling                   |
+| [gensim](https://radimrehurek.com/gensim/) | [4.3.2](https://pypi.org/project/gensim/4.3.2/) | LGPL-2.1-only | Radim Rehurek     | Python framework for fast Vector Space Modelling                   |
 | [typer](https://github.com/tiangolo/typer) | [0.9.0](https://pypi.org/project/typer/0.9.0/)  | MIT License   | Sebastián Ramírez | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-<!--[[[end]]] (checksum: 1d34d7add94a85ea1ed0d03582907c57)-->
+<!--[[[end]]] (checksum: e7bb139ab5557f42ce09516068f8d63a)-->
 
 ### Indirect Dependencies
 
@@ -48,7 +48,7 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-gensim==4.3.1
+gensim==4.3.2
 ├── numpy [required: >=1.18.5, installed: 1.25.2]
 ├── scipy [required: >=1.7.0, installed: 1.11.1]
 │   └── numpy [required: >=1.21.6,<1.28.0, installed: 1.25.2]
@@ -58,4 +58,4 @@ typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.6]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.7.1]
 ````
-<!--[[[end]]] (checksum: 83f85f05902bc0f117874503c158015a)-->
+<!--[[[end]]] (checksum: 6dc91c5715fd83f891f3dd3851c47f33)-->
