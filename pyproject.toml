@@ -21,7 +21,7 @@ classifiers = [
 keywords = ["developer-tools", "surviving-process-bloat", "requirements-engineering", "validation", "verification"]
 dependencies = [
     "PyYAML >= 6.0.1",
-    "gensim == 4.2.0",
+    "gensim == 4.3.2",
     "typer >= 0.9.0",
 ]
 requires-python = ">=3.9"
