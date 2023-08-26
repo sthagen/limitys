@@ -7,7 +7,7 @@ Overlap (Finnish: limitys) assesses sentences from constrained and overlapping v
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
-[![downloads](https://pepy.tech/badge/limitys/month)](https://pepy.tech/project/limitys)
+[![downloads](https://static.pepy.tech/badge/limitys/month)](https://pepy.tech/project/limitys)
 [![wheel](https://img.shields.io/pypi/wheel/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
