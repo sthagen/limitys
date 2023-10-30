@@ -8,7 +8,7 @@ Overlap (Finnish: limitys) assesses sentences from constrained and overlapping v
 [![Configuration](docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/limitys/tree/default/item/docs/third-party/README.md)
 
 [![Version](https://img.shields.io/pypi/v/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
-[![Downloads](https://static.pepy.tech/badge/limitys/month)](https://pepy.tech/project/limitys)
+[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/limitys)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/limitys.svg?style=flat)](https://pypi.python.org/pypi/limitys/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/limitys/log)
 
