@@ -1,7 +1,7 @@
 {
   "limitys": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:25:02.998626",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:23:44 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 100,
@@ -13,6 +13,25 @@
     "num_branches": 248,
     "num_partial_branches": 3,
     "covered_branches": 17,
-    "missing_branches": 231
+    "missing_branches": 231,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 6,
+    "files": [
+      "limitys/__init__.py",
+      "limitys/align.py",
+      "limitys/cli.py",
+      "limitys/limitys.py",
+      "limitys/rule_if.py",
+      "limitys/stop.py"
+    ],
+    "blake3": "fd96ed2fa7d82efd95932c74c419abc2f7193f308e9cdb0e763c6e9dcbc17609",
+    "blake2": "6a9c60f6b15aea9d316f66c341e53de5e0b4f7a96d5e5112743dbbbef6212472fc513f4d7326dd89f0ce23c79cb2f87ff70f0bf9dcf980b33d16854d51f630fe",
+    "sha512": "e7041fe887094a71be61a639dc73fe4fdba32e2771beb16162b1b3d5cd716498e8442d2f6b87171dabd34f933ac45ec7788a7695a43927be2f66e65879d16f7c",
+    "sha384": "b50d14a288414e87f0c2c1df5ad029027c600955081427e2e7584f2047624ac047d3596b7c832677a4d84b9035654052",
+    "sha256": "352a41e7b31119040f7312d6c3a88bc5fc1ec0f7c98a3da56663707f13c79909",
+    "sha1": "24cbed541e96a915d2aa5a3848507d630591e4ed",
+    "md5": "4de2a3d90fcd22b2d92d2d274233bf5d",
+    "python_version": "3.11.4",
+    "entropy": 4.366517
   }
 }
