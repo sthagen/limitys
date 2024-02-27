@@ -20,6 +20,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "",
     "keywords": "developer-tools,surviving-process-bloat,requirements-engineering,validation,verification",
     "license": "",
@@ -36,6 +37,7 @@
       "Source-Code": "https://git.sr.ht/~sthagen/limitys",
       "Test-Coverage": "https://codes.dilettant.life/coverage/limitys"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/limitys/2022.9.25/",
     "requires_dist": [
       "PyYAML (>=6.0)",
